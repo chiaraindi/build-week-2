@@ -1,0 +1,82 @@
+/* NAVBAR */
+.nav-logo {
+    width: 118px;
+    height: 64px;
+}
+
+.nav-btn {
+    border: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.inactive {
+    color: #adb5bd;
+
+    transition: all 100ms linear;
+}
+
+.inactive:hover {
+    color: #495057;
+    background: #dee2e6;
+}
+
+.nav-globe-icon,
+.burger-icon {
+    width: 20px;
+}
+
+.globe-btn:hover {
+    background: #dee2e6;
+}
+
+.profile-btn {
+    padding: 6px 12px;
+    border: 1px solid #dee2e6;
+
+    transition: all 100ms linear;
+}
+
+.profile-btn:hover {
+    box-shadow: 0 2px 2px #dee2e6;
+}
+
+.profile-icon {
+    width: 42px;
+}
+
+/* Swiper */
+.swiper-slide {
+    width: auto;
+}
+
+.swiper-slide a {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.swiper-icon {
+    width: 32px;
+    padding-bottom: 8px;
+}
+
+/* Swiper Buttons */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #353535;
+    --swiper-navigation-size: 15px;
+}
+
+.swiper-button-prev {
+    top: 22px;
+    left: -20px;
+}
+
+.swiper-button-next {
+    top: 22px;
+    right: -20px;
+}
