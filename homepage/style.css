@@ -6,21 +6,21 @@
 
 .nav-btn {
     border: none;
-    font-weight: 500;
+    font-size: 16px;
     padding: 10px 20px;
     background: #fff;
     border-radius: 50px;
 }
 
 .inactive {
-    color: #adb5bd;
+    color: #6a6a6a;
 
     transition: all 100ms linear;
 }
 
 .inactive:hover {
-    color: #495057;
-    background: #dee2e6;
+    color: #353535;
+    background: #f1f3f5;
 }
 
 .nav-globe-icon,
@@ -29,7 +29,7 @@
 }
 
 .globe-btn:hover {
-    background: #dee2e6;
+    background: #f1f3f5;
 }
 
 .profile-btn {
@@ -54,29 +54,83 @@
 
 .swiper-slide a {
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
+    color: #6a6a6a;
     align-items: center;
+    padding-bottom: 10px;
     flex-direction: column;
+
+    transition: all 100ms linear;
+}
+
+.swiper-slide:nth-of-type(1) a {
+    color: #000 !important;
+}
+
+.swiper-slide:nth-of-type(1) {
+    border-bottom: 2px solid #000 !important;
+}
+
+.swiper-slide a:hover {
+    color: #000 !important;
+}
+
+.swiper-slide:hover {
+    border-bottom: 2px solid #adb5bd;
 }
 
 .swiper-icon {
-    width: 32px;
+    width: 24px;
     padding-bottom: 8px;
 }
 
 /* Swiper Buttons */
 .swiper-button-prev,
 .swiper-button-next {
+    top: 14px;
     color: #353535;
-    --swiper-navigation-size: 15px;
+    font-weight: bolder;
+    --swiper-navigation-size: 12px;
+
+    transition: transform 150ms linear;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    transform: scale(1.1);
+    box-shadow: -2px 2px 15px #adb5bd;
 }
 
 .swiper-button-prev {
-    top: 22px;
     left: -20px;
+    box-shadow: 0px 0 20px 30px white;
 }
 
 .swiper-button-next {
-    top: 22px;
     right: -20px;
+    box-shadow: -25px 0 20px 10px white;
+}
+
+.swiper-button-disabled {
+    display: none;
+}
+
+/* Carousel */
+.filter-icon {
+    width: 22px;
+}
+
+.filter-btn {
+    padding: 13px;
+    font-size: 13px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+
+    transition: all 100ms linear;
+}
+
+.filter-btn:hover {
+    background: #f8f9fa;
+    border-color: #353535;
 }
