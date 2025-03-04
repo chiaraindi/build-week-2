@@ -14,6 +14,8 @@ body {
     height: auto;
 }
 
+/*Barra centrale*/
+
 .search-btn {
     all: unset
 }
@@ -37,7 +39,7 @@ body {
 }
 
 .search-btn span {
- font-weight: 600;
+    font-weight: 600;
 }
 
 .guest-btn {
@@ -51,7 +53,38 @@ body {
     border-radius: 50%;
 }
 
-.btn-nav-right {
+/*Comandi a destra*/
+
+.btn-affitta-lingua {
     all: unset;
     font-weight: 600;
+}
+
+.btn-affitta-lingua i {
+    padding-right: 10px;
+}
+
+.log-in {
+    all: unset;
+    border: solid 1px;
+    border-color: #DDDDDD;
+    border-radius: 50px;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 4px, rgba(229, 229, 229, 0.24) 0px 3px 6px;
+    transition: box-shadow 0.3s ease;
+    padding: 0 10px;
+}
+
+.log-in i {
+    padding: 0 5px;
+}
+
+.list-icon {
+    font-size: 16px;
+    color: black;
+}
+
+.person-icon {
+    font-size: 30.2px;
+    color: grey;
 }
