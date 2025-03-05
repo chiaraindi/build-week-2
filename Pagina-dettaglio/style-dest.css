@@ -109,6 +109,8 @@ nav {
     margin-top: 20px;
 }
 
+/*Header */
+
 header {
     margin: 0 200px;
 }
@@ -129,12 +131,18 @@ header h3 {
     font-weight: 600;
 }
 
-.first-img img {
+@media (max-width: 768px) {
+    .header-icon-text {
+        display: none;
+    }
+}
+
+.first-container img {
     width: 550px;
     height: 350px;
 }
 
-.secundary-img img {
+.secundary-container img {
     width: 265px;
     height: 175px;
 }
