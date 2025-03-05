@@ -208,13 +208,13 @@ header h3 {
     }
 }
 
-    /* Aggiustamenti per tablet (768px - 1024px) */
-    @media (min-width: 768px) and (max-width: 1024px) {
+/* Aggiustamenti per tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
 
-        /* Nascondere icone in versione tablet */
-        .header-title .header-icon-text {
-            display: none;
-        }
+    /* Nascondere icone in versione tablet */
+    .header-title .header-icon-text {
+        display: none;
+    }
 
     /* Impostazioni layout header tablet */
     .header-title-container {
@@ -237,5 +237,28 @@ header h3 {
         position: absolute;
         bottom: 10px;
         left: 10px;
+    }
+}
+
+/* Main */
+.info-container {
+    padding: 20px;
+}
+
+.form-container {
+    position: sticky;
+    top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto;
+    max-height: 100vh;
+}
+
+/* Versione mobile sparisce il form (deve diventare bottone)*/
+@media (max-width: 1024px) {
+    .form-container {
+     display: none;
     }
 }
