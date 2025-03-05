@@ -121,6 +121,14 @@ header {
     background-color:  #F7F7F7 ;
 }
 
+header h3 {
+    font-weight: 600;
+}
+
+.header-icon-text {
+    font-weight: 600;
+}
+
 .first-img img {
     width: 550px;
     height: 350px;
