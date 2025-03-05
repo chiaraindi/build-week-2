@@ -13,7 +13,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="container-fluid">
+    <nav class="container-fluid d-none d-lg-block">
         <div class="row">
             <div class="col d-flex justify-content-between align-items-center py-3 px-5">
                 <div class="nav-logo">
@@ -28,7 +28,7 @@
                 <div class="nav-user-experience d-flex align-items-center gap-2">
                     <button class="nav-btn inactive text-black fw-medium" href="#">Affitta con Airbnb</button>
                     <button class="nav-btn globe-btn py-2 px-3">
-                        <div class="nav-globe-icon">
+                        <div class="globe-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -60,40 +60,239 @@
             </div>
         </div>
     </nav>
-    <!-- Main Content -->
-    <main class="container-fluid border-top">
-        <!-- Swiper Carousel -->
-        <section class="container-fluid py-4 px-5">
-            <div class="row">
-                <div class="col-11 position-relative">
-                    <div class="swiper">
-                        <div class="swiper-wrapper carousel-wrapper"></div>
-                    </div>
-                    <div class="swiper-button-prev border border-secondary p-3 rounded-circle position-absolute"></div>
-                    <div class="swiper-button-next border border-secondary p-3 rounded-circle position-absolute"></div>
+    <!-- Swiper Carousel -->
+    <div class="container-fluid py-4 px-5">
+        <div class="row">
+            <div class="col-12 col-lg-10 position-relative">
+                <div class="swiper">
+                    <div class="swiper-wrapper carousel-wrapper"></div>
                 </div>
-                <div class="col-1 d-flex justify-content-center align-items-center pb-3">
-                    <button class="filter-btn fw-medium d-flex gap-3">
-                        <div class="filter-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
-                            </svg>
-                        </div>
-                        Filtri
-                    </button>
-                </div>
+                <div class="swiper-button-prev border border-secondary p-3 rounded-circle position-absolute"></div>
+                <div class="swiper-button-next border border-secondary p-3 rounded-circle position-absolute"></div>
             </div>
+            <div class="col-2 d-none d-lg-flex justify-content-center align-items-center pb-3">
+                <button class="filter-btn fw-medium d-flex gap-3">
+                    <div class="filter-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                        </svg>
+                    </div>
+                    Filtri
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <main>
+        <section class="container-fluid">
+            <div class="row card-container"></div>
         </section>
     </main>
+    <!-- Footer -->
+    <footer>
+        <!-- Futuri viaggi -->
+        <div class="future-trip container-fluid border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="pt-5 pb-3">Ispirazione per viaggi futuri</h4>
+                    </div>
+                    <div class="col-12">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-popolari-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-popolari" type="button" role="tab" aria-controls="nav-popolari"
+                                    aria-selected="true">Popolari</button>
+                                <button class="nav-link" id="nav-litorale-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-litorale" type="button" role="tab" aria-controls="nav-litorale"
+                                    aria-selected="false">Sul litorale</button>
+                                <button class="nav-link" id="nav-destinazioni-storiche-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-destinazioni-storiche" type="button" role="tab"
+                                    aria-controls="nav-destinazioni-storiche" aria-selected="false">Destinazioni
+                                    storiche</button>
+                                <button class="nav-link" id="nav-isole-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-isole" type="button" role="tab" aria-controls="nav-isole"
+                                    aria-selected="true">Isole</button>
+                                <button class="nav-link" id="nav-montagne-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-montagne" type="button" role="tab" aria-controls="nav-montagne"
+                                    aria-selected="false">Montagne</button>
+                                <button class="nav-link" id="nav-categorie-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-categorie" type="button" role="tab"
+                                    aria-controls="nav-categorie" aria-selected="false">Categorie</button>
+                                <button class="nav-link" id="nav-attivita-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-attivita" type="button" role="tab" aria-controls="nav-attivita"
+                                    aria-selected="false">Attività</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-popolari" role="tabpanel"
+                                aria-labelledby="nav-popolari-tab" tabindex="0"></div>
+                            <div class="tab-pane fade" id="nav-litorale" role="tabpanel"
+                                aria-labelledby="nav-litorale-tab" tabindex="0"></div>
+                            <div class="tab-pane fade" id="nav-destinazioni-storiche" role="tabpanel"
+                                aria-labelledby="nav-destinazioni-storiche-tab" tabindex="0"></div>
+                            <div class="tab-pane fade" id="nav-isole" role="tabpanel" aria-labelledby="nav-isole-tab"
+                                tabindex="0"></div>
+                            <div class="tab-pane fade" id="nav-montagne" role="tabpanel"
+                                aria-labelledby="nav-montagne-tab" tabindex="0"></div>
+                            <div class="tab-pane fade" id="nav-categorie" role="tabpanel"
+                                aria-labelledby="nav-categorie-tab" tabindex="0"></div>
+                            <div class="tab-pane fade" id="nav-attivita" role="tabpanel"
+                                aria-labelledby="nav-attivita-tab" tabindex="0"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer links -->
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-lg-4">
+                    <h6>Assistenza</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Centro Assistenza</a></li>
+                        <li><a href="#" class="text-decoration-none">AirCover</a></li>
+                        <li><a href="#" class="text-decoration-none">Antidiscriminazione</a></li>
+                        <li><a href="#" class="text-decoration-none">Supporto alla disabilità</a></li>
+                        <li><a href="#" class="text-decoration-none">Opzioni di cancellazione</a></li>
+                        <li><a href="#" class="text-decoration-none">Segnala problema nel quartiere</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h6>Ospitare</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Centro Assistenza</a></li>
+                        <li><a href="#" class="text-decoration-none">AirCover</a></li>
+                        <li><a href="#" class="text-decoration-none">Antidiscriminazione</a></li>
+                        <li><a href="#" class="text-decoration-none">Supporto alla disabilità</a></li>
+                        <li><a href="#" class="text-decoration-none">Opzioni di cancellazione</a></li>
+                        <li><a href="#" class="text-decoration-none">Segnala problema nel quartiere</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h6>Airbnb</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Centro Assistenza</a></li>
+                        <li><a href="#" class="text-decoration-none">AirCover</a></li>
+                        <li><a href="#" class="text-decoration-none">Antidiscriminazione</a></li>
+                        <li><a href="#" class="text-decoration-none">Supporto alla disabilità</a></li>
+                        <li><a href="#" class="text-decoration-none">Opzioni di cancellazione</a></li>
+                        <li><a href="#" class="text-decoration-none">Segnala problema nel quartiere</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row border-top">
+                <div class="col-12 pt-4 d-flex justify-content-center gap-2">
+                    <div class="globe-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                        </svg>
+                    </div>
+                    <p class="fw-medium">Italiano (IT)</p>
+                    <p class="ps-2 fw-medium">€ EUR</p>
+                </div>
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Airbnb,Inc.</p>
+                </div>
+                <div class="col-12">
+                    <ul class="footer-bottom-links list-unstyled d-flex justify-content-center">
+                        <li><a href="#" class="text-decoration-none">Privacy</a><span>.</span></li>
+                        <li><a href="#" class="text-decoration-none">Termini</a><span>.</span></li>
+                        <li><a href="#" class="text-decoration-none">Mappa del sito</a><span>.</span></li>
+                        <li><a href="#" class="text-decoration-none">Dettagli dell'azienda</a><span>.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/footer.js"></script>
     <script src="./scripts/carousel-icons.js"></script>
+    <script src="./scripts/cards.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 
 </html>
+
+
+
+<!-- <div class="col col-md-6 col-lg-4 col-xxl-2">
+                    <div class="custom-card d-flex flex-column">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner position-relative">
+                                <div class="carousel-item active">
+                                    <img src="https://a0.muscache.com/im/pictures/17979331/3f134177_original.jpg?im_w=720&im_format=avif"
+                                        class="d-block w-100 rounded-3" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://a0.muscache.com/im/pictures/17979357/c94cb06d_original.jpg?im_w=720&im_format=avif"
+                                        class="d-block w-100 rounded-3" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://a0.muscache.com/im/pictures/17979343/76ca328a_original.jpg?im_w=720&im_format=avif"
+                                        class="d-block w-100 rounded-3" alt="...">
+                                </div>
+                                <div class="card-most-loved position-absolute">
+                                    <a href="#" class="fw-medium">Amato dagli ospiti</a>
+                                </div>
+                                <div class="heart-icon position-absolute">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-text py-2">
+                            <div class="card-location d-flex align-items-center justify-content-between">
+                                <h6 class="mb-0">San Salvatore Monferrato, Italia</h6>
+                                <div class="card-rating d-flex align-items-center gap-1">
+                                    <div class="star-icon d-flex align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="size-6">
+                                            <path fill-rule="evenodd"
+                                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <p class="mb-0">4,91</p>
+                                </div>
+                            </div>
+                            <div class="card-info">
+                                <p class="mb-0">Host: Mauro</p>
+                                <p class="mb-2">31 gen - 05 feb</p>
+                            </div>
+                            <div class="card-price">
+                                <p class="mb-0"><span class="fw-medium">188 €</span> notte</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
