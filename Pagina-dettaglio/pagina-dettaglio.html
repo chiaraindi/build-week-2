@@ -93,7 +93,8 @@
 
                     <!-- Overlay per ultima immagine -->
                     <div class="overlay">
-                        <button class="btn btn-light"> <i class="bi bi-grid-3x3-gap p-2"></i>Mostra tutte le foto</button>
+                        <button class="btn btn-light"> <i class="bi bi-grid-3x3-gap p-2"></i>Mostra tutte le
+                            foto</button>
                     </div>
                 </div>
             </div>
@@ -117,53 +118,55 @@
                         <img src="/assets/5.webp" class="d-block w-100" alt="Immagine 5">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </button>
             </div>
         </div>
     </header>
 
-<!--Informazioni e form prenotazione-->
-<main class="container-fluid">
-    <div class="row">
-        <!-- Colonna sinistra con informazioni -->
-        <div class="col-lg-8 col-md-12">
-            <div class="info-container">
-                <h3>Carate Urio, Italia. Intero alloggio: appartamento</h3>
-                <p>4 ospiti . 1 camera da letto . 2 letti . 1 bagno</p>
-                <p>Da finire... </p>
-            </div>
-        </div>
-
-        <!-- Colonna destra con il form -->
-        <div class="col-lg-4 col-md-12">
-            <div class="form-container">
-                <h3>Aggiungi le date per conoscere i prezzi</h3>
-                <form>
-                    <div class="check-in-data d-flex">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Check-in</label>
-                        <input type="text" class="form-control" id="check-in" placeholder="Aggiungi una data">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Check-out</label>
-                        <input type="email" class="form-control" id="check-out" placeholder="Aggiungi una data">
-                    </div>
+    <!--Informazioni e form prenotazione-->
+    <main class="container-fluid">
+        <div class="row">
+            <!-- Colonna sinistra con informazioni -->
+            <div class="col-lg-8 col-md-12">
+                <div class="info-container">
+                    <h3>Carate Urio, Italia. Intero alloggio: appartamento</h3>
+                    <p>4 ospiti . 1 camera da letto . 2 letti . 1 bagno</p>
+                    <p>Da finire... </p>
                 </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Ospiti</label>
-                        <input type="email" class="form-control" id="guest" placeholder="1 ospite">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Controlla la disponibilità</button>
-                </form>
+            </div>
+
+            <!-- Colonna destra con il form -->
+            <div class="col-lg-4 col-md-12">
+                <div class="form-container">
+                    <h4>Aggiungi le date per conoscere i prezzi</h4>
+                    <form>
+                        <div class="d-flex">
+                            <div class="mb-3 label-container">
+                                <label for="text" class="form-label">CHECK-IN</label>
+                                <input type="text" class="form-control" placeholder="Aggiungi una data">
+                            </div>
+                            <div class="mb-3 label-container">
+                                <label for="text" class="form-label">CHECK-OUT</label>
+                                <input type="text" class="form-control" id="check-out" placeholder="Aggiungi una data">
+                            </div>
+                        </div>
+                        <div class="mb-3 label-container">
+                            <label for="email" class="form-label">OSPITI</label>
+                            <input type="email" class="form-control" id="guest" placeholder="1 ospite">
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-primary btn-availability">Controlla la disponibilità</button>
+                </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
 
 
 

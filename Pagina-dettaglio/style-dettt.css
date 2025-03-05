@@ -238,11 +238,11 @@ header h3 {
     }
 }
 
-/* Main */
+/* Main contenente info e form*/
 
 main {
-padding: 40px 0 0 0;
-margin: 0;
+    padding: 40px 0 0 0;
+    margin: 0;
 }
 
 
@@ -250,16 +250,44 @@ margin: 0;
     position: sticky;
     top: 20px;
     padding: 20px;
-    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: auto;
     max-height: 100vh;
 }
 
-/* Versione mobile sparisce il form (deve diventare bottone)*/
+form {
+    padding-top: 20px;
+}
+
+.label-container {
+    border: solid 1px black;
+}
+
+.form-control {
+    border: none;
+    padding: 0 0 10px 10px;
+}
+
+.form-label {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+.btn-availability {
+    background-color:  #FF385C;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+}
+
+/* Versione mobile sparisce il form (deve diventare bottone)
 @media (max-width: 1024px) {
     .form-container {
-     display: none;
+        display: none;
     }
-}
+} */
