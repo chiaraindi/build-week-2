@@ -245,7 +245,6 @@ main {
     margin: 0;
 }
 
-
 .form-container {
     position: sticky;
     top: 20px;
@@ -262,6 +261,8 @@ form {
 
 .label-container {
     border: solid 1px black;
+    margin: 0;
+    padding: 0;
 }
 
 .form-control {
