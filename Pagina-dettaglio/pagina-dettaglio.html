@@ -99,7 +99,7 @@
             </div>
 
             <!-- Carosello visibile solo su smartphone -->
-            <div id="carouselExample" class="carousel slide d-md-none" data-bs-ride="carousel">
+            <div id="carouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="/assets/1.webp" class="d-block w-100" alt="Immagine 1">
@@ -117,10 +117,10 @@
                         <img src="/assets/5.webp" class="d-block w-100" alt="Immagine 5">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </button>
             </div>
@@ -144,6 +144,7 @@
             <div class="form-container">
                 <h3>Aggiungi le date per conoscere i prezzi</h3>
                 <form>
+                    <div class="check-in-data d-flex">
                     <div class="mb-3">
                         <label for="name" class="form-label">Check-in</label>
                         <input type="text" class="form-control" id="check-in" placeholder="Aggiungi una data">
@@ -152,8 +153,9 @@
                         <label for="email" class="form-label">Check-out</label>
                         <input type="email" class="form-control" id="check-out" placeholder="Aggiungi una data">
                     </div>
+                </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Check-out</label>
+                        <label for="email" class="form-label">Ospiti</label>
                         <input type="email" class="form-control" id="guest" placeholder="1 ospite">
                     </div>
                     <button type="submit" class="btn btn-primary">Controlla la disponibilità</button>

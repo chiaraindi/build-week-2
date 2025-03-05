@@ -181,7 +181,7 @@ header h3 {
 
 @media (max-width: 767px) {
 
-    /* Rimuovi il testo delle icone nell'header */
+    /* Rimuove il testo delle icone nell'header */
     .header-title-container .header-icon-text {
         display: none;
     }
@@ -232,18 +232,19 @@ header h3 {
         max-height: 100vh;
     }
 
-    /* L'overlay nella versione tablet resta*/
+    /* L'overlay nella versione tablet sparisce*/
     .overlay {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
+        display: none;
     }
 }
 
 /* Main */
-.info-container {
-    padding: 20px;
+
+main {
+padding: 40px 0 0 0;
+margin: 0;
 }
+
 
 .form-container {
     position: sticky;
