@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 16px;
+}
+
+nav {
+    margin: 0;
+}
+
+.logo img {
+    width: 118px;
+    height: auto;
+}
+
+/* Barra centrale */
+.search-btn {
+    all: unset;
+}
+
+.div-search {
+    border: solid 1px;
+    border-color: #DDDDDD;
+    border-radius: 50px;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 4px, rgba(229, 229, 229, 0.24) 0px 3px 6px;
+    transition: box-shadow 0.3s ease;
+}
+
+.div-search:hover {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.line {
+    border-right: solid 1px #bbbbbb;
+    height: 25px;
+}
+
+.search-btn span {
+    font-weight: 600;
+}
+
+.guest-btn {
+    color: grey;
+}
+
+.search-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #FF385C;
+    border-radius: 50%;
+}
+
+/* Comandi a destra */
+.btn-affitta-lingua {
+    all: unset;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.log-in {
+    all: unset;
+    border: solid 1px;
+    border-color: #DDDDDD;
+    border-radius: 50px;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 4px, rgba(229, 229, 229, 0.24) 0px 3px 6px;
+    transition: box-shadow 0.3s ease;
+    padding: 0 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.log-in i {
+    padding: 0 5px;
+}
+
+.list-icon {
+    font-size: 16px;
+    color: black;
+}
+
+.person-icon {
+    font-size: 30.2px;
+    color: grey;
+}
+
+.btn-affitta-lingua:hover {
+    background-color: #F7F7F7;
+}
+
+.log-in:hover {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.right-command {
+    margin-left: 50px;
+}
+
+.horizzontal-line {
+    border-bottom: solid 3px rgba(229, 229, 229, 0.24);
+    margin-top: 20px;
+}
+
+/* Header titolo e icone */
+header {
+    margin: 0x;
+}
+
+.header-title-container {
+    margin: 30px 0;
+}
+
+header .btn:hover {
+    background-color: #F7F7F7;
+}
+
+header h3 {
+    font-weight: 600;
+}
+
+.header-icon-text {
+    font-weight: 600;
+}
+
+/* Header foto */
+
+.gallery-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.first-container img:hover {
+    filter: brightness(0.7);
+}
+
+.secondary-container img {
+    margin-bottom: 8px;
+}
+
+.secondary-container img:hover {
+    filter: brightness(0.7);
+}
+
+/* Overlay mostra tutte le foto */
+.position-relative {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.overlay button {
+    color: black;
+    font-weight: bold;
+    border: solid 1px black;
+}
+
+.overlay button:hover {
+    border: solid 1px black;
+}
+
+.carousel-inner img {
+    border-radius: 10px;
+}
+
+/* Versione responsive mobile */
+
+@media (max-width: 767px) {
+
+    /* Rimuovi il testo delle icone nell'header */
+    .header-title-container .header-icon-text {
+        display: none;
+    }
+
+    /* Impostazioni layout header mobile */
+    .header-title-container {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    /* Galleria diventa carosello a schermo intero */
+    .gallery-container .row {
+        display: none;
+    }
+
+    .carousel-item {
+        max-height: 100vh;
+    }
+
+    /* Overlay nella versione mobile sparisce */
+    .overlay {
+        display: none;
+    }
+}
+
+    /* Aggiustamenti per tablet (768px - 1024px) */
+    @media (min-width: 768px) and (max-width: 1024px) {
+
+        /* Nascondere icone in versione tablet */
+        .header-title .header-icon-text {
+            display: none;
+        }
+
+    /* Impostazioni layout header tablet */
+    .header-title-container {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    /* Galleria: diventa carosello a schermo intero */
+    .gallery-container .row {
+        display: none;
+    }
+
+    .carousel-item {
+        max-height: 100vh;
+    }
+
+    /* L'overlay nella versione tablet resta*/
+    .overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+}
