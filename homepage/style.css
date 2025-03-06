@@ -215,7 +215,22 @@
     letter-spacing: -0.3px;
 }
 
+.card-location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-rating {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 .star-icon {
+    display: flex;
+    align-items: center;
+
     width: 15px;
 }
 
