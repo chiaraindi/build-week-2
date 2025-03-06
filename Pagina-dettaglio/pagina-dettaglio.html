@@ -83,16 +83,18 @@
         <div class="container">
             <div class="row ">
                 <div class="col-6 first-container">
-                   <div class="ratio ratio-1x1"> <img src="/assets/1.webp" alt="Immagine 1" class="img-fluid"></div>
+                    <div class="ratio ratio-1x1"> <img src="/assets/1.webp" alt="Immagine 1" class="img-fluid"></div>
                 </div>
 
                 <div class="col-6">
                     <div class="row g-3">
                         <div class="col-6">
-                            <div class="ratio ratio-1x1"><img src="/assets/2.webp" alt="Immagine 2" class="img-fluid"></div>
+                            <div class="ratio ratio-1x1"><img src="/assets/2.webp" alt="Immagine 2" class="img-fluid">
+                            </div>
                         </div>
                         <div class="col-6">
-                            <div class="ratio ratio-1x1"><img src="/assets/3.webp" alt="Immagine 3" class="img-fluid"></div>
+                            <div class="ratio ratio-1x1"><img src="/assets/3.webp" alt="Immagine 3" class="img-fluid">
+                            </div>
                         </div>
                         <div class="col-6">
                             <div class="ratio ratio-1x1"><img src="/assets/4.webp" alt="Immagine 4" class="img-fluid">
@@ -158,40 +160,75 @@
 
 
     <!--Informazioni e form prenotazione-->
-    <main class="container-fluid">
+    <main class="container">
         <div class="row">
             <!-- Colonna sinistra con informazioni -->
             <div class="col-lg-8 col-md-12">
                 <div class="info-container">
-                    <h3>Carate Urio, Italia. Intero alloggio: appartamento</h3>
-                    <p>4 ospiti . 1 camera da letto . 2 letti . 1 bagno</p>
-                    <p>Da finire... </p>
+                    <div>
+                        <h3>Carate Urio, Italia. Intero alloggio: appartamento</h3>
+                        <p>4 ospiti . 1 camera da letto . 2 letti . 1 bagno</p>
+                    </div>
+                    <!--amato dagli ospiti-->
+                    <div class="review-container justify-content-between border rounded">
+                        <div class="review-header text-center">
+                            <img src="/assets/award.png" alt="Award" class="mb-1" width="50">
+                            <p class="mb-1">Amato <br> dagli ospiti</p>
+                            <img src="/assets/award-2.png" alt="Award" width="50">
+                        </div>
+
+                        <div class="review-text flex-grow-1">
+                            <p class="mb-0">Uno degli alloggi più amati <br> dagli ospiti di Airbnb</p>
+                        </div>
+
+                        <div class="review-score flex-column">
+                            <p class="fs-4 mb-1">4.97</p>
+                            <div class="stars text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
+                            <div class="text-center">
+                                <p class="mb-0 fw-bold">145</p>
+                                <p class="mb-0">recensioni</p>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Colonna destra con il form -->
-            <div class="col-lg-4 col-md-12">
-                <div class="form-container">
-                    <h4>Aggiungi le date per conoscere i prezzi</h4>
-                    <form>
-                        <div class="d-flex">
-                            <div class="mb-3 label-container">
-                                <label for="text" class="form-label">CHECK-IN</label>
-                                <input type="text" class="form-control" placeholder="Aggiungi una data">
-                            </div>
-                            <div class="mb-3 label-container">
-                                <label for="text" class="form-label">CHECK-OUT</label>
-                                <input type="text" class="form-control" id="check-out" placeholder="Aggiungi una data">
-                            </div>
+
+        </div>
+        </div>
+
+        <!-- Colonna destra con il form -->
+        <div class="col-lg-4 col-md-12">
+            <div class="form-container">
+                <h4>Aggiungi le date per conoscere i prezzi</h4>
+                <form>
+                    <div class="d-flex">
+                        <div class="mb-3 label-container">
+                            <label for="text" class="form-label">CHECK-IN</label>
+                            <input type="text" class="form-control" placeholder="Aggiungi una data">
                         </div>
                         <div class="mb-3 label-container">
-                            <label for="email" class="form-label">OSPITI</label>
-                            <input type="email" class="form-control" id="guest" placeholder="1 ospite">
+                            <label for="text" class="form-label">CHECK-OUT</label>
+                            <input type="text" class="form-control" id="check-out" placeholder="Aggiungi una data">
                         </div>
-                    </form>
-                    <button type="submit" class="btn btn-primary btn-availability">Controlla la disponibilità</button>
-                </div>
+                    </div>
+                    <div class="mb-3 label-container">
+                        <label for="email" class="form-label">OSPITI</label>
+                        <input type="email" class="form-control" id="guest" placeholder="1 ospite">
+                    </div>
+                </form>
+                <button type="submit" class="btn btn-primary btn-availability">Controlla la disponibilità</button>
             </div>
+        </div>
         </div>
     </main>
 
