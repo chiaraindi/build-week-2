@@ -1,12 +1,470 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina di dettaglio</title>
-    <link rel="stylesheet" href="./style-hero.css">
+    <title>Vuoi aprire un airbnb?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styleHero.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-3 px-lg-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./AssetsStefanoVacca/airbnb-1.svg" alt="Airbnb Logo" width="30" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Vuoi aprire un airbnb?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-airbnb" href="#">
+                            <i class="bi bi-house-door-fill"></i> Airbnb Start
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-5 custom-col">
+                <div class="slidecontainer">
+                    <h2 class="text-pink custom-text"><b>Apri un Airbnb.</b></h2>
+                    <p class="text-dark custom-text">Potresti guadagnare</p>
+                    <span id="gainValue"></span>
+                    <input type="range" min="1" max="30" value="1" class="slider" id="nightRange">
+                    <p><span id="nightValue"></span> a una tariffa stimata di 150€ a notte</p>
+                </div>
+                <button class="oval-button mt-3 w-100 p-2">
+                    <i class="bi bi-search text-pink"></i>
+                    <span>Genova</span>
+                    <small class="d-block text-muted">Cerca stanze</small>
+                </button>
+            </div>
+
+            <div class="col-md-5 custom-col-space mt-4">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182292.49508595673!2d8.726029091231275!3d44.44710432327583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d34152dcd49aad%3A0x236a84f11881620a!2sGenova%20GE!5e0!3m2!1sit!2sit!4v1741111773553!5m2!1sit!2sit"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12 mt-5">
+            <p class="text-center display-5 fw-bold">Con Airbnb Start, mettere casa su Airbnb è facile</p>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <img src="./AssetsStefanoVacca/social.jpg" alt="Social Image" class="img-fixed">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Ricevi supporto individuale da un Superhost</h3>
+                        <p class="text-muted small">Ti metteremo in contatto con un Superhost della tua zona, che ti
+                            guiderà dalla prima domanda al primo ospite tramite telefono, videochiamata o chat.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Un ospite esperto per la tua prima prenotazione</h3>
+                        <p class="text-muted small">Per la tua prima prenotazione, puoi decidere di accogliere un ospite
+                            esperto che vanta almeno tre soggiorni e una serie di recensioni positive su Airbnb..</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Supporto Airbnb specializzato</h3>
+                        <p class="text-muted small">In caso di problemi, ad esempio con l'account o la fatturazione, i
+                            nuovi host possono contattare con un solo clic gli agenti del Community support, che sono
+                            stati appositamente formati per aiutarti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <img src="./AssetsStefanoVacca/aiCover.jpg" alt="AI Cover Image" class="img-fixed img-small">
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-10 mt-2">
+            <p class="text-center display-5 fw-bold">Pubblica il tuo annuncio su Airbnb e approfitta di una protezione
+                completa</p>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+                <table class="table table-borderless table-separator">
+                    <thead>
+                        <tr class="table-separator">
+                            <th scope="col"></th>
+                            <th scope="col">Airbnb</th>
+                            <th scope="col">Concorrenti</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td><b>Supporto individuale da un Superhost</b>
+                                <p>
+                                    Il nostro sistema di verifica completo esamina dettagli quali nome, indirizzo,
+                                    documento identificativo e altro per confermare l'identità degli ospiti che
+                                    prenotano su Airbnb.</p>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Controllo delle prenotazioni</b>
+                                <p>
+                                    La nostra tecnologia proprietaria analizza centinaia di fattori in ogni prenotazione
+                                    e blocca quelle che presentano indicatori di rischio elevati relativi
+                                    all'organizzazione di feste e a danni materiali.</p>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-x-circle-fill text-danger"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Protezione dai danni fino a 3.000.000 USD</b>
+                                <p>
+                                    Airbnb ti rimborsa per i danni causati dagli ospiti al tuo alloggio e ai tuoi
+                                    effetti personali, e include queste protezioni specifiche:</p>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-x-circle-fill text-danger"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Opere d'arte e oggetti di valore</td>
+                            <td class="text-center">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-x-circle-fill text-danger"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Vetture e imbarcazioni</td>
+                            <td class="text-center">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-x-circle-fill text-danger"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Danni causati dagli animali domestici</td>
+                            <td class="text-center">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-x-circle-fill text-danger"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Perdita di reddito</td>
+                            <td class="text-center">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-x-circle-fill text-danger"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Pulizia approfondita</td>
+                            <td class="text-center">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-x-circle-fill text-danger"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Opere d'arte e oggetti di valore</td>
+                            <td class="text-center">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-x-circle-fill text-danger"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Assicurazione di responsabilità civile fino a 1.000.000 USD</b>
+                                <p>
+                                    Ti proteggiamo nel raro caso in cui un ospite si faccia male o i suoi effetti
+                                    personali vengano danneggiati o rubati.</p>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Supporto sicurezza H24</b>
+                                <p>
+                                    Se non ti senti al sicuro, puoi contattare direttamente dall'app i nostri operatori
+                                    di sicurezza appositamente formati, disponibili sia di giorno che di notte.</p>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-check-circle-fill text-success"></i>
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-x-circle-fill text-danger"></i>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-1">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-left">
+                <p>Il confronto si basa sulle informazioni disponibili al pubblico e sulle offerte gratuite dei
+                    principali concorrenti nel mese di ottobre 2022. <a href="URL_DELLA_TUA_PAGINA">Scopri i dettagli e
+                        le esclusioni qui.</a></p>
+            </div>
+            <div class="col-md-9 text-center">
+                <button class="btn btn-outline-dark mt-3 justify-content-center"
+                    style="border-radius: 10px; padding: 15px 30px;">Scopri di più</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="mb-0">Le risposte alle tue domande</h2>
+            </div>
+            <div class="col-md-8">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Il mio alloggio è adatto a Airbnb?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Gli ospiti Airbnb sono interessati a tutti i tipi di alloggi.
+                                Abbiamo annunci per minicase, baite, case sull'albero e altro ancora. Anche una stanza
+                                in più può essere un'ottima soluzione per un soggiorno.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                La disponibilità del mio alloggio deve essere costante?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Assolutamente no: hai tu il controllo totale sul tuo calendario.
+                                Puoi affittare il tuo spazio una volta all'anno, qualche notte al mese o più spesso.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Quanto dovrei interagire con gli ospiti?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Sei tu a decidere. Alcuni host scelgono di inviare messaggi agli
+                                ospiti solo nei momenti importanti, e ricorrono ad esempio a una breve nota al check-in,
+                                mentre altri preferiscono incontrare di persona chi accolgono. Troverai certamente uno
+                                stile che si adatti sia a te che agli ospiti.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                Qualche consiglio su come essere un ottimo host Airbnb?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Una volta capito come gestire gli aspetti essenziali, la strada
+                                è tutta in discesa. Tieni pulito l'alloggio, rispondi prontamente agli ospiti e fornisci
+                                i servizi necessari, come gli asciugamani puliti. Ad alcuni host piace aggiungere un
+                                tocco personale, ad esempio collocando dei fiori freschi nella sistemazione o
+                                condividendo un elenco di mete locali da esplorare, ma non è affatto obbligatorio farlo.
+                                Prosegui nella lettura per scoprire ulteriori consigli sull'attività di host</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                Che costi applica Airbnb?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">In genere, Airbnb riscuote dei costi del servizio fissi pari al
+                                3% del subtotale della prenotazione, quando vieni pagato. Inoltre, addebita una
+                                commissione agli ospiti ogni volta che prenotano. In molte aree, peraltro, Airbnb
+                                riscuote e versa automaticamente le imposte sulle vendite e sul turismo per tuo conto.
+                                Scopri di più sui costi</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./AssetsStefanoVacca/fotoDomande.jpg" alt="Immagine Superhost" class="img-fluid">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-start text-start">
+                <h2>Hai altre domande?</h2>
+                <p>Ricevi le risposte da un Superhost esperto vicino a te.</p>
+                <button class="btn btn-outline-dark mt-3" style="border-radius: 10px; padding: 10px 20px;">Trova un
+                    Superhost</button>
+            </div>
+        </div>
+    </div>
+
+    <hr class="footerline mt-5">
+
+    <footer class="container-fluid mx-auto ps-5 p-4">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <h5>Assistenza</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">Centro Assistenza</a></li>
+                    <li><a href="#" class="footer-link">AirCover</a></li>
+                    <li><a href="#" class="footer-link">Antidiscriminazione</a></li>
+                    <li><a href="#" class="footer-link">Supporto alla disabilità</a></li>
+                    <li><a href="#" class="footer-link">Opzioni di cancellazione</a></li>
+                    <li><a href="#" class="footer-link">Segnala problema nel quartiere</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Ospitare</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">Apri un Airbnb</a></li>
+                    <li><a href="#" class="footer-link">AirCover per gli host</a></li>
+                    <li><a href="#" class="footer-link">Risorse per gli host</a></li>
+                    <li><a href="#" class="footer-link">Forum della community</a></li>
+                    <li><a href="#" class="footer-link">Ospitare responsabilmente</a></li>
+                    <li><a href="#" class="footer-link">Partecipa a una lezione gratuita sull'ospitalità</a></li>
+                    <li><a href="#" class="footer-link">Trova un co-host</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Airbnb</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">Newsroom</a></li>
+                    <li><a href="#" class="footer-link">Nuove funzionalità</a></li>
+                    <li><a href="#" class="footer-link">Opportunità di lavoro</a></li>
+                    <li><a href="#" class="footer-link">Investitori</a></li>
+                    <li><a href="#" class="footer-link">Gift card</a></li>
+                    <li><a href="#" class="footer-link">Soggiorni con Airbnb.org</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="footerline2 mt-4">
+        <div class="row mt-3 justify-content-between text-end">
+                <div class="col-md-4 text-start">
+                    <span>© 2025 Airbnb, Inc.</span>
+                    <a href="#" class="footer-link ms-2">Privacy</a>
+                    <a href="#" class="footer-link ms-2">Termini</a>
+                    <a href="#" class="footer-link ms-2">Mappa del sito</a>
+                    <a href="#" class="footer-link ms-2">Dettagli dell'azienda</a>
+                </div>
+                <div class="col-md-4 footer-social-icons">
+                    <span class="footer-link">Italiano (IT)</span>
+                    <span class="footer-link ms-2">Scegli una valuta</span>
+                    <span class="footer-link ms-2">€ EUR</span>
+                    <a href="#" class="footer-link ms-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="footer-link ms-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="footer-link ms-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="footer-link ms-2"><i class="bi bi-linkedin"></i></a>
+                </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="nodeHero.js"></script>
 </body>
+
 </html>

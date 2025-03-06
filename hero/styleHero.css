@@ -1,0 +1,173 @@
+.navbar {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.text-pink {
+    color: #ff385c;
+}
+
+.btn-airbnb {
+    background: linear-gradient(45deg, #ff385c, #ff1e56);
+    color: white;
+}
+
+.custom-col {
+    max-width: 600px;
+}
+
+.custom-text {
+    font-size: 1.5rem;
+}
+
+.custom-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-col {
+    padding-right: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .custom-col-space {
+        margin-top: 20px;
+    }
+}
+
+.custom-col-space {
+    padding-left: 45px;
+}
+
+.custom-text {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.slidecontainer {
+    width: 100%;
+    margin-top: 20px; 
+}
+
+.slider {
+    width: 100%;
+}
+
+@keyframes flipDigit {
+    0% {
+        transform: rotateX(0);
+    }
+    50% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0);
+    }
+}
+
+.digit {
+    display: inline-block;
+    animation: flipDigit 0.1s ease-in-out;
+}
+
+#gainValue {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ff385c;
+    display: inline-block;
+    perspective: 3000px;
+}
+
+.oval-button {
+    background-color: #f8f9fa;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+.oval-button:hover {
+    background-color: #e9ecef;
+}
+
+.oval-button i {
+    margin-right: 8px;
+    color: #ff69b4;
+}
+
+.oval-button span {
+    margin-right: 8px;
+}
+
+.oval-button small {
+    display: block;
+    width: 100%;
+}
+
+.img-fixed {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-small {
+    max-width: 35%;
+    height: auto;
+    margin-top: 5rem;
+}
+
+.table-separator tr {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.table-separator tbody tr {
+    border-bottom: 1px solid #d3d3d3; 
+}
+
+.accordion .accordion-item {
+    min-height: 80px;
+}
+
+.footerline {
+    border-top: 2px solid #4b4b4b; 
+    margin: 0; 
+    width: 100%;
+}
+.footerline2 {
+    border-top: 2px solid #4b4b4b; 
+    margin: 0; 
+    width: 100%;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.875rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-social-icons a {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
