@@ -143,7 +143,7 @@ header h3 {
 }
 
 .secondary-container img {
-    margin-bottom: 8px;
+    padding: 8px 0 0 0;
 }
 
 .secondary-container img:hover {
