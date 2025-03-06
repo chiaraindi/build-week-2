@@ -131,11 +131,13 @@ header h3 {
 
 /* Header foto */
 
+.gallery-container {
+    border-radius: 10px;
+}
+
 .gallery-container img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    height: auto;
 }
 
 .first-container img:hover {
@@ -175,9 +177,20 @@ header h3 {
 
 .carousel-inner img {
     border-radius: 10px;
-}
+} */
 
 /* Versione responsive mobile */
+
+.fixed-size {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row {
+    display: flex;
+    align-items: stretch;
+}
 
 @media (max-width: 767px) {
 
