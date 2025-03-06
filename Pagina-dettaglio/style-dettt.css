@@ -133,11 +133,7 @@ header h3 {
 
 .gallery-container {
     border-radius: 10px;
-}
-
-.gallery-container img {
-    width: 100%;
-    height: auto;
+ 
 }
 
 .first-container img:hover {
@@ -145,7 +141,6 @@ header h3 {
 }
 
 .secondary-container img {
-    padding: 8px 0 0 0;
 }
 
 .secondary-container img:hover {
@@ -181,16 +176,6 @@ header h3 {
 
 /* Versione responsive mobile */
 
-.fixed-size {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.row {
-    display: flex;
-    align-items: stretch;
-}
 
 @media (max-width: 767px) {
 

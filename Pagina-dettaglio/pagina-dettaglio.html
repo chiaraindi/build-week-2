@@ -77,84 +77,85 @@
                         class="text-decoration-underline p-1 header-icon-text">Salva</span></button>
             </div>
         </div>
+    </header>
 
-         <!--  <div class="container">
-            <div class="row">
-            Colonna di sinistra con una foto
-            <div class="col-md-6">
-            <img src="/assets/1.webp" alt="Foto sinistra" class="img-fluid h-100 fixed-size">
-            </div>
-            Colonna di destra con due righe, ognuna con due foto 
-            <div class="col-md-6 d-flex flex-wrap">
-            <div class="col-6">
-            <img src="/assets/2.webp" alt="Foto 1" class="img-fluid fixed-size">
-            </div>
-            <div class="col-6">
-            <img src="/assets/3.webp" alt="Foto 2" class="img-fluid fixed-size">
-            </div>
-            <div class="col-6">
-            <img src="/assets/4.webp" alt="Foto 3" class="img-fluid fixed-size">
-            </div>
-            <div class="col-6">
-            <img src="/assets/5.webp" alt="Foto 4" class="img-fluid fixed-size">
-            </div>
-            </div>
-            </div>
-            -->
-
-       
-        <div class="container gallery-container p-0">
-            <div class="row d-none d-md-flex">
-                <div class="col-md-6 first-container">
-                    <img src="/assets/1.webp" alt="Immagine 1" class="img-fluid">
+    <section>
+        <div class="container">
+            <div class="row ">
+                <div class="col-6 first-container">
+                   <div class="ratio ratio-1x1"> <img src="/assets/1.webp" alt="Immagine 1" class="img-fluid"></div>
                 </div>
-                <div class="col-md-3 d-flex flex-column secondary-container p-0">
-                    <img src="/assets/2.webp" alt="Immagine 2" class="img-fluid">
-                    <img src="/assets/3.webp" alt="Immagine 3" class="img-fluid">
-                </div>
-                <div class="col-md-3 d-flex flex-column secondary-container p-0 position-relative">
-                    <img src="/assets/4.webp" alt="Immagine 4" class="img-fluid">
-                    <img src="/assets/5.webp" alt="Immagine 5" class="img-fluid">
-                
 
-                    <!-- Overlay per ultima immagine -->
+                <div class="col-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="ratio ratio-1x1"><img src="/assets/2.webp" alt="Immagine 2" class="img-fluid"></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="ratio ratio-1x1"><img src="/assets/3.webp" alt="Immagine 3" class="img-fluid"></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="ratio ratio-1x1"><img src="/assets/4.webp" alt="Immagine 4" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="ratio ratio-1x1"> <img src="/assets/5.webp" alt="Immagine 5" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--    <div class="col-md-3 d-flex flex-column secondary-container">
+                    <img src="/assets/2.webp" alt="Immagine 2">
+                    <img src="/assets/3.webp" alt="Immagine 3">
+                </div>
+                <div class="col-md-3 d-flex flex-column secondary-container position-relative">
+                    <img src="/assets/4.webp" alt="Immagine 4">
+                    <img src="/assets/5.webp" alt="Immagine 5">
+                    -->
+
+    <!-- Overlay per ultima immagine 
                     <div class="overlay">
                         <button class="btn btn-light"> <i class="bi bi-grid-3x3-gap p-2"></i>Mostra tutte le
                             foto</button>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
-            <!-- Carosello visibile solo su smartphone -->
-            <div id="carouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/assets/1.webp" class="d-block w-100" alt="Immagine 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/assets/2.webp" class="d-block w-100" alt="Immagine 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/assets/3.webp" class="d-block w-100" alt="Immagine 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/assets/4.webp" class="d-block w-100" alt="Immagine 4">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/assets/5.webp" class="d-block w-100" alt="Immagine 5">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
+    <!-- Carosello visibile solo su smartphone -->
+    <div id="carouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/assets/1.webp" class="d-block w-100" alt="Immagine 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/2.webp" class="d-block w-100" alt="Immagine 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/3.webp" class="d-block w-100" alt="Immagine 3">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/4.webp" class="d-block w-100" alt="Immagine 4">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/5.webp" class="d-block w-100" alt="Immagine 5">
             </div>
         </div>
-    </header>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+    </div>
+
 
     <!--Informazioni e form prenotazione-->
     <main class="container-fluid">
