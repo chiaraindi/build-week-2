@@ -100,17 +100,17 @@
                             <div class="ratio ratio-1x1"><img src="/assets/4.webp" alt="Immagine 4" class="img-fluid">
                             </div>
                         </div>
-                       <!-- Overlay per ultima immagine -->
-                       <div class="col-6 position-relative last-img">
-                        <div class="ratio ratio-1x1">
-                            <img src="/assets/5.webp" alt="Immagine 5" class="img-fluid">
-                            <div class="overlay">
-                                <button class="btn btn-light">
-                                    <i class="bi bi-grid-3x3-gap p-2"></i> Mostra tutte le foto
-                                </button>
+                        <!-- Overlay per ultima immagine -->
+                        <div class="col-6 position-relative last-img">
+                            <div class="ratio ratio-1x1">
+                                <img src="/assets/5.webp" alt="Immagine 5" class="img-fluid">
+                                <div class="overlay">
+                                    <button class="btn btn-light">
+                                        <i class="bi bi-grid-3x3-gap p-2"></i> Mostra tutte le foto
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
@@ -145,31 +145,87 @@
     </div>
     </div>
 
-
     <!--Informazioni e form prenotazione-->
-    <main class="container">
+    <main class="container-fluid">
         <div class="row">
             <!-- Colonna sinistra con informazioni -->
             <div class="col-lg-8 col-md-12">
                 <div class="info-container">
-                    <div>
-                        <h3>Carate Urio, Italia. Intero alloggio: appartamento</h3>
-                        <p>4 ospiti . 1 camera da letto . 2 letti . 1 bagno</p>
+                    <h3>Carate Urio, Italia. Intero alloggio: appartamento</h3>
+                    <p>4 ospiti . 1 camera da letto . 2 letti . 1 bagno</p>
+                </div>
+
+                <div class="review-container d-flex justify-content-between border rounded">
+                    <div class="review-header text-center d-flex justify-content-center align-content-center">
+                        <img src="/assets/award.png" alt="Award" class="mb-1" width="50">
+                        <p class="mb-1">Amato <br> dagli ospiti</p>
+                        <img src="/assets/award-2.png" alt="Award" width="50">
                     </div>
-                    <!--amato dagli ospiti-->
-                    <div class="review-container justify-content-between border rounded">
-                        <div class="review-header text-center">
+                    <div class="review-text d-flex justify-content-center align-content-center">
+                        <p class="mb-0">Uno degli alloggi più amati <br> dagli ospiti di Airbnb</p>
+                    </div>
+                    <div class="review-score flex-column align-items-center">
+                        <p class="mb-1 text-center">4.97</p>
+                        <div class="stars text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Colonna destra con il form -->
+            <div class="col-lg-4 col-md-12">
+                <div class="form-container p-3 border rounded">
+                    <h4>Aggiungi le date per conoscere i prezzi</h4>
+                    <form>
+                        <div class="d-flex">
+                            <div class="mb-3 label-container">
+                                <label for="text" class="form-label">CHECK-IN</label>
+                                <input type="text" class="form-control" placeholder="Aggiungi una data">
+                            </div>
+                            <div class="mb-3 label-container">
+                                <label for="text" class="form-label">CHECK-OUT</label>
+                                <input type="text" class="form-control" id="check-out" placeholder="Aggiungi una data">
+                            </div>
+                        </div>
+                        <div class="mb-3 label-container">
+                            <label for="email" class="form-label">OSPITI</label>
+                            <input type="email" class="form-control" id="guest" placeholder="1 ospite">
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-primary btn-availability w-100">Controlla la
+                        disponibilità</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <!-- da aggiunegre
+
+                <div class="info-container">
+                    
+
+                    <div class="review-container d-flex justify-content-between border rounded">
+                        <div class="review-header text-center d-flex justify-content-center align-content-center">
                             <img src="/assets/award.png" alt="Award" class="mb-1" width="50">
                             <p class="mb-1">Amato <br> dagli ospiti</p>
                             <img src="/assets/award-2.png" alt="Award" width="50">
                         </div>
-
-                        <div class="review-text flex-grow-1">
+                        <div class="review-text d-flex justify-content-center align-content-center">
                             <p class="mb-0">Uno degli alloggi più amati <br> dagli ospiti di Airbnb</p>
                         </div>
-
-                        <div class="review-score flex-column">
-                            <p class="fs-4 mb-1">4.97</p>
+                        <div class="review-score flex-column align-items-center">
+                            <p class="mb-1 text-center">4.97</p>
                             <div class="stars text-warning">
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
@@ -177,48 +233,42 @@
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                             </div>
-
-                            <div class="text-center">
-                                <p class="mb-0 fw-bold">145</p>
-                                <p class="mb-0">recensioni</p>
-                            </div>
-
                         </div>
                     </div>
+                    <p> Questo attico ha una fantastica vista in quanto le finestre si affacciano sul lago, proprio di
+                        fronte a Villa Pliniana.
+                        L appartamento fa parte di una antica villa di fine 800, ristrutturata.
+                        Ideale per rilassarsi, ascoltando il suono delle onde del lago, che lambiscono l'abitazione.
+                        Si trova nel centro del tipico paese di Carate Urio, di fronte alla caffetteria, alla farmacia,
+                        a due negozi di alimentari ed alla fermata dei bus C10 e C20.
+                        il parcheggio pubblico è davanti all'entrata della casa
+                        Lo spazio
+                        Dopo aver salito le scale in pietra, si entro nell open space con travi a viste e con la grande
+                        finestra a volta.
+                        Qui si trovano 2 aree relax con divani, di cui uno di questi a letto, poltroncine ed un tavolo
+                        da pranzo.
+                        La cucina, fornita di tutto, è nell'angolo, con una porta finestra che dà sul terrazzo.
+                        Nella camera matrimoniale c'è un armadio con cassettiera.
+                        Eventualmente, appartato, c'è la possibilità di un altro letto.
+                        Accesso per gli ospiti
+                        Tutto l attico è a completa disposizione degli ospiti.
+                        Giovanni vi aspetterà per la consegna delle chiavi e per ogni vostra esigenza durante il
+                        soggiorno, in quanto abita nell' appartamento sottostante.
+                        Abbiamo la necessità, che al momento della prenotazione, ci venga fornita una copia dei
+                        documenti d identità per adempimenti legislativi.
+                        Altre cose da tenere a mente
+                        Da Carate è possibile raggiungere in breve tempo, Villa Balbianello, Villa Carlotta, e prendere
+                        il battello per visitare le famose località di Bellagio e Varenna.
+                        E' possibile camminare per sentieri che raggiungono la cima della montagna e godere viste
+                        incomparabili.
+                        Numero di registrazione
+                        IT013044C2208B6V2T</p>
                 </div>
             </div>
-        </div>
+ -->
 
-
-        </div>
-        </div>
-
-        <!-- Colonna destra con il form -->
-        <div class="col-lg-4 col-md-12">
-            <div class="form-container">
-                <h4>Aggiungi le date per conoscere i prezzi</h4>
-                <form>
-                    <div class="d-flex">
-                        <div class="mb-3 label-container">
-                            <label for="text" class="form-label">CHECK-IN</label>
-                            <input type="text" class="form-control" placeholder="Aggiungi una data">
-                        </div>
-                        <div class="mb-3 label-container">
-                            <label for="text" class="form-label">CHECK-OUT</label>
-                            <input type="text" class="form-control" id="check-out" placeholder="Aggiungi una data">
-                        </div>
-                    </div>
-                    <div class="mb-3 label-container">
-                        <label for="email" class="form-label">OSPITI</label>
-                        <input type="email" class="form-control" id="guest" placeholder="1 ospite">
-                    </div>
-                </form>
-                <button type="submit" class="btn btn-primary btn-availability">Controlla la disponibilità</button>
-            </div>
-        </div>
-        </div>
+    </div>
     </main>
-
 
     <hr class="footerline mt-5">
 
@@ -262,22 +312,22 @@
 
         <hr class="footerline2 mt-4">
         <div class="row mt-3 justify-content-between text-end">
-                <div class="col-md-4 text-start">
-                    <span>© 2025 Airbnb, Inc.</span>
-                    <a href="#" class="footer-link ms-2">Privacy</a>
-                    <a href="#" class="footer-link ms-2">Termini</a>
-                    <a href="#" class="footer-link ms-2">Mappa del sito</a>
-                    <a href="#" class="footer-link ms-2">Dettagli dell'azienda</a>
-                </div>
-                <div class="col-md-4 footer-social-icons">
-                    <span class="footer-link">Italiano (IT)</span>
-                    <span class="footer-link ms-2">Scegli una valuta</span>
-                    <span class="footer-link ms-2">€ EUR</span>
-                    <a href="#" class="footer-link ms-2"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="footer-link ms-2"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="footer-link ms-2"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="footer-link ms-2"><i class="bi bi-linkedin"></i></a>
-                </div>
+            <div class="col-md-4 text-start">
+                <span>© 2025 Airbnb, Inc.</span>
+                <a href="#" class="footer-link ms-2">Privacy</a>
+                <a href="#" class="footer-link ms-2">Termini</a>
+                <a href="#" class="footer-link ms-2">Mappa del sito</a>
+                <a href="#" class="footer-link ms-2">Dettagli dell'azienda</a>
+            </div>
+            <div class="col-md-4 footer-social-icons">
+                <span class="footer-link">Italiano (IT)</span>
+                <span class="footer-link ms-2">Scegli una valuta</span>
+                <span class="footer-link ms-2">€ EUR</span>
+                <a href="#" class="footer-link ms-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="footer-link ms-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="footer-link ms-2"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="footer-link ms-2"><i class="bi bi-linkedin"></i></a>
+            </div>
         </div>
     </footer>
 
@@ -287,9 +337,9 @@
     <script src="nodeHero.js"></script>
 </body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

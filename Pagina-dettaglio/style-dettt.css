@@ -234,6 +234,11 @@ main {
     margin: 0;
 }
 
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
 .form-container {
     position: sticky;
     top: 20px;
@@ -275,25 +280,25 @@ form {
     font-weight: 600;
 }
 
-/* Versione mobile sparisce il form (deve diventare bottone)
+/* Versione mobile sparisce il form (deve diventare bottone) */
 @media (max-width: 1024px) {
     .form-container {
         display: none;
     }
-} */
+}
+
+/*Barra con recesioni*/
 
 .review-container {
     border: 1px solid #ddd;
     border-radius: 12px;
     padding: 16px;
     background: #fff;
-    display: flex;
     gap: 12px;
     max-width: 600px;
 }
 
 .review-header {
-    align-items: center;
     gap: 8px;
     font-size: 18px;
     color: #222;
@@ -304,10 +309,22 @@ form {
     height: 20px;
 }
 
+.review-text {
+    border-right: 1px solid grey;
+    padding-right: 15px;
+}
+
 .review-score {
-    align-items: center;
     gap: 8px;
 }
+
+.review-score p {
+    font-size: 20px;
+}
+
+
+
+/*Footer*/
 
 .footerline {
     border-top: 2px solid #4b4b4b; 
@@ -334,3 +351,5 @@ form {
     font-size: 1.2rem;
     margin-left: 10px;
 }
+
+
