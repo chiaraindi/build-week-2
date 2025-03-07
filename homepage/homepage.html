@@ -8,66 +8,69 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/nav.css">
 </head>
 
 <body class="d-flex flex-column vh-100">
-    <!-- Navbar -->
-    <nav class="container-fluid">
-        <div class="row d-none d-lg-block">
-            <div class="col d-flex justify-content-between align-items-center py-3 px-5">
-                <div class="nav-logo">
-                    <a href="#">
-                        <img src="../assets/logo-pink.png" alt="airbnb logo" class="img-fluid">
-                    </a>
-                </div>
-                <div class="nav-search-page d-flex align-items-center">
-                    <button class="nav-btn fw-medium" href="#">Alloggi</button>
-                    <button class="nav-btn inactive" href="#">Esperienze</button>
-                </div>
-                <div class="nav-user-experience d-flex align-items-center gap-2">
-                    <button class="nav-btn inactive text-black fw-medium" href="#">Affitta con Airbnb</button>
-                    <button class="nav-btn globe-btn py-2 px-3">
-                        <div class="globe-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
-                            </svg>
-                        </div>
-                    </button>
-                    <div class="nav-profile-settings d-flex align-items-center">
-                        <button class="nav-btn profile-btn d-flex align-items-center gap-3">
-                            <div class="burger-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                                </svg>
-                            </div>
-                            <div class="profile-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                </svg>
-                            </div>
-                        </button>
-
-
-                    </div>
+    <!-- Navbar visibile solo da desktop e tablet -->
+    <nav class="navbar bg-white nav-height fixed-top d-lg-flex justify-content-between align-items-start p-3 d-none">
+        <!-- Logo a sinistra -->
+        <div class="logo">
+            <a href="../homepage/index.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpw4vLCtSxvAtFo2TeYoo4aVtBmbXHeAk_7Q&s"
+                    alt="Logo">
+            </a>
+        </div>
+        <!-- Barra centrale -->
+        <div class="d-flex flex-column justify-content-center position-relative">
+            <div class="barra-centrale-top d-flex justify-content-center">
+                <button class="nav-btn nav-active-btn fw-medium">Alloggi</button>
+                <button class="nav-btn nav-inactive-btn fw-medium">Esperienze</button>
+            </div>
+            <div class="barra-centrale-bottom div-search d-flex align-items-center position-absolute">
+                <button class="search-btn p-1 mx-2">
+                    <span>Ovunque </span>
+                </button>
+                <div class="line"></div>
+                <button class="search-btn p-1 mx-2">
+                    <span>Qualunque settimana </span>
+                </button>
+                <div class="line"></div>
+                <button class="search-btn p-1 mx-2 guest-btn">
+                    Aggiungi Ospiti
+                </button>
+                <div class="d-flex search-icon justify-content-center align-items-center text-white">
+                    <i class="bi bi-search"></i>
                 </div>
             </div>
         </div>
-        <div class="row px-5 pt-3">
-            <div class="col-12 col-lg-10 position-relative">
+        <!-- Comandi a destra -->
+        <div class="nav-right d-flex justify-content-center align-items-center right-command">
+            <button class="btn-affitta-lingua p-2 mx-2">
+                Affitta con Airbnb
+            </button>
+            <button class="btn-affitta-lingua p-2 mx-2 " aria-label="Lingua">
+                <i class="bi bi-globe"></i>
+            </button>
+            <button class="log-in d-flex justify-content-center align-items-center">
+                <i class="bi bi-list list-icon"></i>
+                <i class="bi bi-person-circle person-icon"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- Swiper Icons -->
+    <div class="container-fluid swiper-icons-container">
+        <div class="row px-3 pt-3">
+            <div class="col-12 col-lg-11 position-relative">
                 <div class="swiper">
                     <div class="swiper-wrapper carousel-wrapper"></div>
                 </div>
                 <div class="swiper-button-prev border border-secondary p-3 rounded-circle position-absolute"></div>
                 <div class="swiper-button-next border border-secondary p-3 rounded-circle position-absolute"></div>
             </div>
-            <div class="col-2 d-none d-lg-flex justify-content-end align-items-center pb-3">
+            <div class="col-1 d-none d-lg-flex justify-content-end align-items-center pb-3">
                 <button type="button" class="filter-btn fw-medium d-flex gap-3" data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop">
                     <div class="filter-icon">
@@ -79,7 +82,6 @@
                     </div>
                     Filtri
                 </button>
-                <!-- Modal -->
                 <div class="modal fad" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable">
@@ -237,9 +239,9 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
     <!-- Main Content -->
-    <main>
+    <main class="pt-3">
         <section class="container-fluid pb-5 px-lg-5">
             <div class="row card-container g-3"></div>
         </section>
@@ -256,26 +258,27 @@
                     <div class="col-12">
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <button class="nav-link active" id="nav-popolari-tab" data-bs-toggle="tab"
+                                <button class="nav-link active fw-medium" id="nav-popolari-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-popolari" type="button" role="tab" aria-controls="nav-popolari"
                                     aria-selected="true">Popolari</button>
-                                <button class="nav-link" id="nav-litorale-tab" data-bs-toggle="tab"
+                                <button class="nav-link fw-medium" id="nav-litorale-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-litorale" type="button" role="tab" aria-controls="nav-litorale"
                                     aria-selected="false">Sul litorale</button>
-                                <button class="nav-link" id="nav-destinazioni-storiche-tab" data-bs-toggle="tab"
-                                    data-bs-target="#nav-destinazioni-storiche" type="button" role="tab"
-                                    aria-controls="nav-destinazioni-storiche" aria-selected="false">Destinazioni
+                                <button class="nav-link fw-medium" id="nav-destinazioni-storiche-tab"
+                                    data-bs-toggle="tab" data-bs-target="#nav-destinazioni-storiche" type="button"
+                                    role="tab" aria-controls="nav-destinazioni-storiche"
+                                    aria-selected="false">Destinazioni
                                     storiche</button>
-                                <button class="nav-link" id="nav-isole-tab" data-bs-toggle="tab"
+                                <button class="nav-link fw-medium" id="nav-isole-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-isole" type="button" role="tab" aria-controls="nav-isole"
                                     aria-selected="true">Isole</button>
-                                <button class="nav-link" id="nav-montagne-tab" data-bs-toggle="tab"
+                                <button class="nav-link fw-medium" id="nav-montagne-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-montagne" type="button" role="tab" aria-controls="nav-montagne"
                                     aria-selected="false">Montagne</button>
-                                <button class="nav-link" id="nav-categorie-tab" data-bs-toggle="tab"
+                                <button class="nav-link fw-medium" id="nav-categorie-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-categorie" type="button" role="tab"
                                     aria-controls="nav-categorie" aria-selected="false">Categorie</button>
-                                <button class="nav-link" id="nav-attivita-tab" data-bs-toggle="tab"
+                                <button class="nav-link fw-medium" id="nav-attivita-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-attivita" type="button" role="tab" aria-controls="nav-attivita"
                                     aria-selected="false">Attività</button>
                             </div>
@@ -301,7 +304,7 @@
             </div>
         </div>
         <!-- Footer links -->
-        <div class="container">
+        <div class="container footer-links-container">
             <div class="row py-5">
                 <div class="col-12 col-lg-4">
                     <h6>Assistenza</h6>
@@ -338,7 +341,7 @@
                 </div>
             </div>
             <div class="row border-top">
-                <div class="col-12 pt-4 d-flex justify-content-center gap-2">
+                <div class="col-12 pt-4 d-flex ">
                     <div class="globe-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
@@ -349,11 +352,11 @@
                     <p class="fw-medium">Italiano (IT)</p>
                     <p class="ps-2 fw-medium">€ EUR</p>
                 </div>
-                <div class="col-12 text-center">
+                <div class="col-12">
                     <p class="mb-0">&copy; 2025 Airbnb,Inc.</p>
                 </div>
                 <div class="col-12">
-                    <ul class="footer-bottom-links list-unstyled d-flex justify-content-center">
+                    <ul class="footer-bottom-links list-unstyled d-flex">
                         <li><a href="#" class="text-decoration-none">Privacy</a><span>.</span></li>
                         <li><a href="#" class="text-decoration-none">Termini</a><span>.</span></li>
                         <li><a href="#" class="text-decoration-none">Mappa del sito</a><span>.</span></li>
@@ -368,8 +371,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./scripts/footer.js"></script>
     <script src="./scripts/carousel-icons.js"></script>
+    <script src="./scripts/footer.js"></script>
     <script src="./scripts/cards.js"></script>
     <script src="./scripts/main.js"></script>
 </body>

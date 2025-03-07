@@ -13,6 +13,18 @@ const addClasses = (element, ...classes) => {
     });
 };
 
+const removeClasses = (element, ...classes) => {
+    classes.forEach(CSSclass => {
+        return element.classList.remove(CSSclass);
+    });
+};
+
+const toggleClasses = (element, ...classes) => {
+    classes.forEach(CSSclass => {
+        return element.classList.toggle(CSSclass);
+    });
+};
+
 const addAttribute = (element, name, value) => {
     return element.setAttribute(name, value);
 };
@@ -30,14 +42,49 @@ const appendElements = (container, ...contents) => {
 // Carousel Icons
 const carouselContainer = document.querySelector('.carousel-wrapper');
 
-carouselIcons.forEach(icon => {
-    carouselContainer.innerHTML += `<div class="swiper-slide">
-                                            <a href="#" class="text-decoration-none fw-medium">
-                                            <div class="swiper-icon">
-                                                ${icon.svg}
-                                            </div>
-                                        ${icon.text}</a>
-                                    </div>`;
+const createBadgeIcon = () => {
+    carouselIcons.forEach(icon => {
+        const swiperSlide = createElement('div');
+        addClasses(swiperSlide, 'swiper-slide');
+
+        const swiperLink = createElement('a');
+        addAttribute(swiperLink, 'href', '#');
+        addClasses(swiperLink, 'text-decoration-none', 'fw-medium');
+
+        // Inside Swiper Link
+        const swiperIcon = createElement('div');
+        addClasses(swiperIcon, 'swiper-icon');
+        swiperIcon.innerHTML = `${icon.svg}`;
+
+        // Append elements
+        appendElements(swiperLink, swiperIcon, `${icon.text}`);
+        appendElements(swiperSlide, swiperLink);
+
+        appendElements(carouselContainer, swiperSlide);
+    });
+};
+
+createBadgeIcon();
+
+// Navbar
+const navbar = document.querySelector('nav');
+const topCentralBar = document.querySelector('.barra-centrale-top');
+const bottomCentralBar = document.querySelector('.barra-centrale-bottom');
+
+window.addEventListener('scroll', () => {
+    const isScrollYZero = window.scrollY === 0;
+
+    if (isScrollYZero) {
+        addClasses(navbar, 'nav-height');
+        addClasses(topCentralBar, 'd-flex');
+        removeClasses(topCentralBar, 'd-none');
+        addClasses(bottomCentralBar, 'position-absolute');
+    } else {
+        removeClasses(navbar, 'nav-height');
+        removeClasses(topCentralBar, 'd-flex');
+        addClasses(topCentralBar, 'd-none');
+        removeClasses(bottomCentralBar, 'position-absolute');
+    }
 });
 
 // Footer
