@@ -80,8 +80,8 @@
     </header>
 
     <section>
-        <div class="container">
-            <div class="row ">
+        <div class="container gallery-container d-none d-md-block">
+            <div class="row">
                 <div class="col-6 first-container">
                     <div class="ratio ratio-1x1"> <img src="/assets/1.webp" alt="Immagine 1" class="img-fluid"></div>
                 </div>
@@ -100,35 +100,22 @@
                             <div class="ratio ratio-1x1"><img src="/assets/4.webp" alt="Immagine 4" class="img-fluid">
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="ratio ratio-1x1"> <img src="/assets/5.webp" alt="Immagine 5" class="img-fluid">
+                       <!-- Overlay per ultima immagine -->
+                       <div class="col-6 position-relative last-img">
+                        <div class="ratio ratio-1x1">
+                            <img src="/assets/5.webp" alt="Immagine 5" class="img-fluid">
+                            <div class="overlay">
+                                <button class="btn btn-light">
+                                    <i class="bi bi-grid-3x3-gap p-2"></i> Mostra tutte le foto
+                                </button>
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
-
-
-
-    <!--    <div class="col-md-3 d-flex flex-column secondary-container">
-                    <img src="/assets/2.webp" alt="Immagine 2">
-                    <img src="/assets/3.webp" alt="Immagine 3">
-                </div>
-                <div class="col-md-3 d-flex flex-column secondary-container position-relative">
-                    <img src="/assets/4.webp" alt="Immagine 4">
-                    <img src="/assets/5.webp" alt="Immagine 5">
-                    -->
-
-    <!-- Overlay per ultima immagine 
-                    <div class="overlay">
-                        <button class="btn btn-light"> <i class="bi bi-grid-3x3-gap p-2"></i>Mostra tutte le
-                            foto</button>
-                    </div>
-                </div>
-            </div>-->
 
     <!-- Carosello visibile solo su smartphone -->
     <div id="carouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel">

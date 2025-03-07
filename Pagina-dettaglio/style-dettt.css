@@ -133,18 +133,16 @@ header h3 {
 
 .gallery-container {
     border-radius: 10px;
- 
 }
 
-.first-container img:hover {
+.gallery-container img:hover {
     filter: brightness(0.7);
+    cursor: pointer;
 }
 
-.secondary-container img {
-}
-
-.secondary-container img:hover {
+.last-img:hover {
     filter: brightness(0.7);
+    cursor: pointer;
 }
 
 /* Overlay mostra tutte le foto */
@@ -154,9 +152,8 @@ header h3 {
 
 .overlay {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    padding: 8px;
+    top: 200px;
+    left:50px;
     border-radius: 12px;
 }
 
@@ -190,11 +187,6 @@ header h3 {
         margin-bottom: 15px;
     }
 
-    /* Galleria diventa carosello a schermo intero */
-    .gallery-container .row {
-        display: none;
-    }
-
     .carousel-item {
         max-height: 50vh;
     }
@@ -206,7 +198,7 @@ header h3 {
 }
 
 /* Aggiustamenti per tablet (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 900px) {
 
     /* Nascondere icone in versione tablet */
     .header-title .header-icon-text {
