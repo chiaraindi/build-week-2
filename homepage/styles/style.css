@@ -1,0 +1,332 @@
+/* Swiper */
+@media (min-width: 992px) {
+    .swiper-icons-container {
+        padding-top: 168px;
+    }
+}
+
+.swiper-slide {
+    width: auto;
+}
+
+.swiper-slide a {
+    display: flex;
+    font-size: 12px;
+    color: #6a6a6a;
+    align-items: center;
+    padding-bottom: 10px;
+    flex-direction: column;
+
+    transition: all 100ms linear;
+}
+
+.swiper-slide:nth-of-type(1) a {
+    color: #000 !important;
+}
+
+.swiper-slide:nth-of-type(1) {
+    border-bottom: 2px solid #000 !important;
+}
+
+.swiper-slide a:hover {
+    color: #000 !important;
+}
+
+.swiper-slide:hover {
+    border-bottom: 2px solid #adb5bd;
+}
+
+.swiper-icon {
+    width: 24px;
+    padding-bottom: 8px;
+}
+
+/* Swiper Buttons */
+.swiper-button-prev,
+.swiper-button-next {
+    top: 14px;
+    color: #353535;
+    font-weight: bolder;
+    --swiper-navigation-size: 12px;
+
+    transition: transform 150ms linear;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    transform: scale(1.1);
+    box-shadow: -2px 2px 15px #adb5bd;
+}
+
+.swiper-button-prev {
+    left: -20px;
+    box-shadow: 0px 0 20px 30px white;
+}
+
+.swiper-button-next {
+    right: -20px;
+    box-shadow: -25px 0 20px 10px white;
+}
+
+.swiper-button-disabled {
+    display: none;
+}
+
+/* Modal Filter  */
+.filter-icon {
+    width: 22px;
+}
+
+.filter-btn {
+    padding: 13px;
+    font-size: 13px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+
+    transition: all 100ms linear;
+}
+
+.filter-btn:hover {
+    background: #f8f9fa;
+    border-color: #353535;
+}
+
+.modal-body .btn-group {
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid #adb5bd;
+}
+
+.modal-body .btn-group button {
+    width: 100%;
+    border: none;
+    background: #fff;
+    padding: 10px 25px;
+    border-radius: 15px;
+}
+
+.modal-body .btn-group button:nth-of-type(2) {
+    border-right: 1px solid #ced4da;
+    border-radius: 0;
+}
+
+.active-btn {
+    border: 3px solid #000 !important;
+}
+
+.inactive-btn:hover {
+    background: #f1f3f5 !important;
+    border: none !important;
+    border-radius: 15px !important;
+}
+
+.plus-icon {
+    width: 35px;
+    height: 35px;
+    color: #6a6a6a;
+    cursor: pointer;
+}
+
+.plus-icon svg:hover {
+    color: #000;
+    border-color: #000 !important;
+}
+
+.modal-body .accordion-item {
+    border-radius: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* Card */
+.custom-card {
+    cursor: pointer;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(100%);
+    transform: scale(0.7);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    align-self: center;
+
+    padding: 5px;
+    margin: 15px;
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+    background: #f1f3f5;
+    box-shadow: 0 0 10px #adb5bd;
+
+    transition: all 200ms linear;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    transform: scale(1.05);
+}
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100%;
+}
+
+.carousel-item img {
+    width: 377px;
+    height: 358.14px;
+}
+
+.card-most-loved {
+    top: 20px;
+    left: 10px;
+}
+
+.card-most-loved a {
+    color: #353535;
+    padding: 5px 8px;
+    border-radius: 50px;
+    text-decoration: none;
+    background: #f8f9fa;
+    box-shadow: 0 2px 5px #6a6a6a;
+}
+
+.heart-icon {
+    top: 19px;
+    right: 10px;
+
+    width: 28px;
+
+    transition: all 150ms linear;
+}
+
+.heart-icon svg {
+    stroke: #fff;
+    fill: #353535b6;
+    transform: scaleX(1.05);
+}
+
+.heart-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Card Text */
+.card-text {
+    letter-spacing: -0.3px;
+}
+
+.card-location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-rating {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.star-icon {
+    display: flex;
+    align-items: center;
+
+    width: 15px;
+}
+
+.card-info {
+    line-height: 1.2;
+    color: #6a6a6a;
+}
+
+@media (min-width: 768px) {
+    .carousel-item img {
+        width: 332px;
+        height: 315.39px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-item img {
+        width: 298.66px;
+        height: 283.72px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .carousel-item img {
+        width: 302px;
+        height: 286.89px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .carousel-item img {
+        width: 373.33px;
+        height: 354.66px;
+    }
+}
+
+/* Footer */
+footer {
+    background: #f7f7f7;
+}
+
+/* Futuri Viaggi */
+.display-grid {
+    padding: 50px 0;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+
+    row-gap: 24px;
+    column-gap: 8px;
+    align-items: flex-start;
+}
+
+@media (min-width: 1024px) {
+    .display-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1440px) {
+    .display-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.nav-tabs button {
+    color: #6a6a6a;
+    background: transparent !important;
+}
+
+.nav-tabs button:hover {
+    color: #000;
+}
+
+footer a {
+    color: #6a6a6a;
+}
+
+.footer-location {
+    min-width: max-content;
+}
+
+.footer-location-title,
+.footer-location-type {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-location-type {
+    color: #6a6a6a;
+}
+
+.footer-bottom-list {
+    display: flex;
+    flex-direction: column;
+}
