@@ -88,7 +88,7 @@ const cardContainer = document.querySelector('.card-container');
 const createCard = () => {
     cardsText.forEach(card => {
         const col = createElement('div');
-        addClasses(col, 'col', 'col-md-6', 'col-lg-4', 'col-xxl-2');
+        addClasses(col, 'col-12', 'col-md-6', 'col-lg-4', 'col-xxl-2');
 
         const customCard = createElement('div');
         addClasses(customCard, 'custom-card', 'd-flex', 'flex-column');
