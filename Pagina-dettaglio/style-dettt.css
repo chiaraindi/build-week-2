@@ -171,13 +171,15 @@ header h3 {
     border-radius: 10px;
 } */
 
+.titolo-mobile h1 {
+    padding: 10px 0 10px 0;
+}
+
 /* Versione responsive mobile */
 
 @media (max-width: 767px) {
 
-    /* Rimuove il testo delle icone nell'header */
-    .header-title-container .header-icon-text {
-        display: none;
+
     }
 
     /* Impostazioni layout header mobile */
@@ -188,7 +190,7 @@ header h3 {
     }
 
     .carousel-item {
-        max-height: 50vh;
+        max-height: 70vh;
     }
 
     /* Overlay nella versione mobile sparisce */
