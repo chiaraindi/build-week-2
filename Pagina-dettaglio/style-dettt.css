@@ -285,13 +285,14 @@ form {
     }
 }
 
-.bottom-bar {
+.button-form {
     bottom: 0;
     margin: 5px;
     padding: 15px;
     background-color: white;
-    max-width: 680px;
+    width: auto;
     border-radius: 8px;
+    border-top: 2px solid #ddd;
 }
 
 /*Barra con recesioni*/
@@ -371,31 +372,66 @@ form {
     cursor: pointer;
 }
 
-/*Footer*/
+/* Footer */
 
-.footerline {
-    border-top: 2px solid #4b4b4b;
-    margin: 0;
-    width: 100%;
+.spazio-div {
+    margin: 50px;
 }
 
-.footerline2 {
-    border-top: 2px solid #4b4b4b;
-    margin: 0;
-    width: 100%;
+footer {
+    background: #f7f7f7;
 }
 
-.footer-link {
-    text-decoration: none;
-    color: inherit;
-    font-size: 0.875rem;
+/* Futuri Viaggi */
+.display-grid {
+    padding: 20px 0;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
+    column-gap: 8px;
+    align-items: flex-start;
 }
 
-.footer-link:hover {
-    text-decoration: underline;
+@media (min-width: 1024px) {
+    .display-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-.footer-social-icons a {
-    font-size: 1.2rem;
-    margin-left: 10px;
+@media (min-width: 1440px) {
+    .display-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.nav-tabs button {
+    color: #6a6a6a;
+    background: transparent !important;
+}
+
+.nav-tabs button:hover {
+    color: #000;
+}
+
+footer a {
+    color: #6a6a6a;
+}
+
+.footer-location {
+    min-width: max-content;
+}
+
+.footer-location-title,
+.footer-location-type {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.footer-location-type {
+    color: #6a6a6a;
+}
+
+.footer-bottom-list {
+    display: flex;
+    flex-direction: column;
 }
