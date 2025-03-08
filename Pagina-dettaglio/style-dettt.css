@@ -153,7 +153,7 @@ header h3 {
 .overlay {
     position: absolute;
     top: 200px;
-    left:50px;
+    left: 50px;
     border-radius: 12px;
 }
 
@@ -169,34 +169,30 @@ header h3 {
 
 .carousel-inner img {
     border-radius: 10px;
-} */
+}
 
-.titolo-mobile h1 {
+*/ .titolo-mobile h1 {
     padding: 10px 0 10px 0;
 }
 
 /* Versione responsive mobile */
 
-@media (max-width: 767px) {
+@media (max-width: 767px) {}
 
+/* Impostazioni layout header mobile */
+.header-title-container {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 15px;
+}
 
-    }
+.carousel-item {
+    max-height: 70vh;
+}
 
-    /* Impostazioni layout header mobile */
-    .header-title-container {
-        flex-direction: column;
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-    .carousel-item {
-        max-height: 70vh;
-    }
-
-    /* Overlay nella versione mobile sparisce */
-    .overlay {
-        display: none;
-    }
+/* Overlay nella versione mobile sparisce */
+.overlay {
+    display: none;
 }
 
 /* Aggiustamenti per tablet (768px - 1024px) */
@@ -274,7 +270,7 @@ form {
 }
 
 .btn-availability {
-    background-color:  #FF385C;
+    background-color: #FF385C;
     border: none;
     border-radius: 20px;
     width: 100%;
@@ -287,6 +283,15 @@ form {
     .form-container {
         display: none;
     }
+}
+
+.bottom-bar {
+    bottom: 0;
+    margin: 5px;
+    padding: 15px;
+    background-color: white;
+    max-width: 680px;
+    border-radius: 8px;
 }
 
 /*Barra con recesioni*/
@@ -332,7 +337,7 @@ form {
     padding-bottom: 15px;
 }
 
-.highlights i{
+.highlights i {
     font-size: 30px;
     padding-right: 15px;
 }
@@ -362,16 +367,21 @@ form {
     margin: 0;
 }
 
+.mostra-altro {
+    cursor: pointer;
+}
+
 /*Footer*/
 
 .footerline {
-    border-top: 2px solid #4b4b4b; 
-    margin: 0; 
+    border-top: 2px solid #4b4b4b;
+    margin: 0;
     width: 100%;
 }
+
 .footerline2 {
-    border-top: 2px solid #4b4b4b; 
-    margin: 0; 
+    border-top: 2px solid #4b4b4b;
+    margin: 0;
     width: 100%;
 }
 
@@ -389,5 +399,3 @@ form {
     font-size: 1.2rem;
     margin-left: 10px;
 }
-
-
