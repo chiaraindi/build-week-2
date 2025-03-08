@@ -17,9 +17,8 @@
 
 <body>
 
-    <!-- Navbar visibile solo da desktop e tablet -->
+    <!-- Navbar principale -->
     <nav class="navbar d-lg-flex justify-content-between d-none">
-        <!-- Logo a sinistra -->
         <div class="logo">
             <a href="../homepage/index.html">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpw4vLCtSxvAtFo2TeYoo4aVtBmbXHeAk_7Q&s"
@@ -27,15 +26,14 @@
             </a>
         </div>
         <div class="d-flex">
-
-            <!-- Barra centrale -->
-            <div class="div-search d-flex align-items-center">
+            <!-- Barra di ricerca -->
+            <div class="div-search d-flex align-items-center" id="openSearch">
                 <button class="search-btn p-1 mx-2">
-                    <span>Ovunque </span>
+                    <span>Ovunque</span>
                 </button>
                 <div class="line"></div>
                 <button class="search-btn p-1 mx-2">
-                    <span>Qualunque settimana </span>
+                    <span>Qualunque settimana</span>
                 </button>
                 <div class="line"></div>
                 <button class="search-btn p-1 mx-2 guest-btn">
@@ -48,9 +46,7 @@
 
             <!-- Comandi a destra -->
             <div class="nav-right d-flex justify-content-center align-items-center right-command">
-                <button class="btn-affitta-lingua p-2 mx-2">
-                    Affitta con Airbnb
-                </button>
+                <button class="btn-affitta-lingua p-2 mx-2">Affitta con Airbnb</button>
                 <button class="btn-affitta-lingua p-2 mx-2 " aria-label="Lingua">
                     <i class="bi bi-globe"></i>
                 </button>
@@ -68,13 +64,13 @@
     <header>
         <div class="header-title-container d-flex justify-content-between flex-column-reverse flex-lg-row">
             <div>
-                <h3 class="fw-bold">GIO' - L'attico fronte lago</h3>
+                <h3 class="fw-semibold d-none d-md-inline">GIO' - L'attico fronte lago</h3>
             </div>
             <div>
                 <button class="btn"><i class="bi bi-upload"></i> <span
-                        class="text-decoration-underline p-1 header-icon-text">Condividi</span></button>
+                        class="text-decoration-underline p-1 header-icon-text d-none d-md-inline">Condividi</span></button>
                 <button class="btn"><i class="bi bi-suit-heart"></i> <span
-                        class="text-decoration-underline p-1 header-icon-text">Salva</span></button>
+                        class="text-decoration-underline p-1 header-icon-text d-none d-md-inline">Salva</span></button>
             </div>
         </div>
     </header>
@@ -121,7 +117,7 @@
     <div id="carouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/assets/1.webp" class="d-block w-100" alt="Immagine 1">
+                <img src="/assets/5.webp" class="d-block w-100" alt="Immagine 1">
             </div>
             <div class="carousel-item">
                 <img src="/assets/2.webp" class="d-block w-100" alt="Immagine 2">
@@ -143,7 +139,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
     </div>
-    </div>
+
 
     <!--Informazioni e form prenotazione-->
     <main class="container-fluid">
@@ -152,7 +148,14 @@
             <!-- Colonna sinistra con informazioni -->
             <div class="col-lg-8 col-md-12">
                 <div class="info-container">
-                    <h3>Carate Urio, Italia. Intero alloggio: appartamento</h3>
+
+                    <!--Titolo e sottotitolo visibile solo su mobile-->
+                    <div class="titolo-mobile  d-block d-md-none">
+                        <h1 class="fw-semibold">GIO' - L'attico fronte lago</h1>
+                        <h5>Carate Urio, Italia. Intero alloggio: appartamento</h5>
+                    </div>
+
+                    <h3 class="d-none d-md-block">Carate Urio, Italia. Intero alloggio: appartamento</h3>
                     <p>4 ospiti . 1 camera da letto . 2 letti . 1 bagno</p>
                 </div>
 
@@ -226,7 +229,8 @@
 
                 <div class="translation-container">
                     <p> Alcune informazioni sono state tradotte automaticamente.</p>
-                    <p class="fw-semibold text-decoration-underline"> Mostra il testo nella lingua originale</p>
+                    <p class="fw-semibold text-decoration-underline mostra-altro"> Mostra il testo nella lingua
+                        originale</p>
                 </div>
 
                 <div>
@@ -239,32 +243,67 @@
 
 
                     <!-- Button trigger modal -->
-                    <a class="fw-semibold text-decoration-underline text-black" data-toggle="modal" data-target="#exampleModalLong">
+                    <a class="fw-semibold text-decoration-underline text-black mostra-altro" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalLong">
                         Mostra altro
                     </a>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Informazioni su questo spazio
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    ...
+                                    Questo attico ha una fantastica vista in quanto le finestre si affacciano sul lago,
+                                    proprio di fronte a Villa Pliniana. <br>
+                                    L appartamento fa parte di una antica villa di fine 800, ristrutturata. <br>
+                                    Ideale per rilassarsi, ascoltando il suono delle onde del lago, che lambiscono
+                                    l'abitazione.
+                                    Si trova nel centro del tipico paese di Carate Urio, di fronte alla caffetteria,
+                                    alla farmacia, a due negozi di alimentari ed alla fermata dei bus C10 e C20. <br>
+                                    il parcheggio pubblico è davanti all'entrata della casa <br>
+                                    <br>
+                                    <p class="fw-semibold">Lo spazio </p>
+                                    Dopo aver salito le scale in pietra, si entro nell open space con travi a viste e
+                                    con la grande finestra a volta. <br>
+                                    Qui si trovano 2 aree relax con divani, di cui uno di questi a letto, poltroncine ed
+                                    un tavolo da pranzo. <br>
+                                    La cucina, fornita di tutto, è nell'angolo, con una porta finestra che dà sul
+                                    terrazzo. <br>
+                                    Nella camera matrimoniale c'è un armadio con cassettiera. <br>
+                                    Eventualmente, appartato, c'è la possibilità di un altro letto. <br>
+                                    <br>
+                                    <p class="fw-semibold">Accesso per gli ospiti </p>
+                                    Tutto l attico è a completa disposizione degli ospiti.<br>
+                                    Giovanni vi aspetterà per la consegna delle chiavi e per ogni vostra esigenza
+                                    durante il soggiorno, in quanto abita nell' appartamento sottostante. <br>
+                                    Abbiamo la necessità, che al momento della prenotazione, ci venga fornita una copia
+                                    dei documenti d identità per adempimenti legislativi. <br>
+                                    <br>
+                                    <p class="fw-semibold"> Altre cose da tenere a mente </p>
+                                    Da Carate è possibile raggiungere in breve tempo, Villa Balbianello, Villa Carlotta,
+                                    e prendere il battello per visitare le famose località di Bellagio e Varenna. <br>
+                                    E' possibile camminare per sentieri che raggiungono la cima della montagna e godere
+                                    viste incomparabili.<br>
+                                    <br>
+                                    Numero di registrazione <br>
+                                    IT013044C2208B6V2T
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Chiudi</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+
+                </div> <!--Chiusura div colonna sinistra-->
             </div>
 
             <!-- Colonna destra con il form -->
@@ -290,11 +329,22 @@
                     <button type="submit" class="btn btn-primary btn-availability w-100">Controlla la
                         disponibilità</button>
                 </div>
+            </div> <!--Chiude div colonna a destra-->
+        </div> <!--Chiude row-->
+
+        <!--Bottone form che appare in mobile, sticky-->
+        <div class="row">
+            <div class="bottom-bar d-flex d-block d-dm-none position-fixed w-100">
+                <div class="col-8">
+                    <h4 class="fw-semibold">Aggiungi le date per conoscere i prezzi</h4>
+                </div>
+                <div class="col-4">
+                    <button type="submit" class="btn btn-primary btn-availability w-100">Controlla la disponibilità</button>
+                </div>
             </div>
         </div>
-
-
-
+        
+        
     </main>
 
     <hr class="footerline mt-5">
@@ -358,6 +408,7 @@
         </div>
     </footer>
 
+    <script src="navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
