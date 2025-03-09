@@ -3,12 +3,31 @@ nav {
 }
 
 .nav-height {
-    min-height: 168px;
+    min-height: 158px;
 }
 
-.logo img {
-    width: 118px;
-    height: auto;
+.logo,
+.small-logo {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .small-logo {
+        display: block;
+        width: 46px;
+        padding-top: 8px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .small-logo {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+        width: 118px;
+    }
 }
 
 .nav-btn {
@@ -32,16 +51,141 @@ nav {
     background: #f8f9fa;
 }
 
-.barra-centrale-bottom {
-    top: 50px;
-    left: -150px;
-    min-width: 456.79px;
-    max-height: 50.19px;
+/* Barra centrale */
+.slide-up {
+    animation: slideUp 250ms;
 }
 
-/* Barra centrale */
+@keyframes slideUp {
+    from {
+        transform: translate(100px, 80px) scale(1.4);
+    }
+    to {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+.slide-down {
+    animation: slideDown 50ms ease-in;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translate(0px, -70px) scale(0.6);
+    }
+    to {
+        transform: translate(110px, -30px) scale(1);
+    }
+}
+
+.barra-centrale-bottom {
+    top: 50px;
+}
+
+.left-position {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.spread-search-bar {
+    display: flex;
+    align-items: center;
+
+    padding: 0 0 0 10px;
+}
+
+.short-search-bar {
+    width: 290px;
+}
+
+@media (min-width: 768px) and (max-width: 995px) {
+    .nav-md-height {
+        height: 210px;
+    }
+
+    .barra-centrale-top {
+        position: absolute;
+        top: 60px;
+    }
+
+    .barra-centrale-bottom {
+        top: 110px;
+    }
+}
+
+.search-input,
 .search-btn {
     all: unset;
+    font-size: 14px;
+}
+
+.search-btn {
+    padding: 0 10px;
+}
+
+.search-btn:nth-of-type(1) {
+    min-width: 65px;
+}
+
+.search-btn:nth-of-type(2) {
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+.search-input input {
+    border: none;
+}
+
+.search-input input:focus {
+    outline: none;
+}
+
+.destination input {
+    width: 164px;
+}
+
+.destination,
+.check,
+.guests {
+    padding: 0 10px;
+    line-height: 1;
+}
+
+.check {
+    border-left: 1px solid #dddddd;
+}
+
+.check:nth-of-type(3) {
+    border-right: 1px solid #dddddd;
+}
+
+.search-btn,
+.check input {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.check input {
+    width: 86px;
+}
+
+.guests input {
+    width: 129px;
+}
+
+@media (min-width: 996px) {
+    .spread-search-bar input {
+        width: max-content;
+    }
+
+    .short-search-bar {
+        width: max-content;
+    }
+
+    .barra-centrale-bottom {
+        top: 75px;
+    }
 }
 
 .div-search {
@@ -63,7 +207,8 @@ nav {
     height: 25px;
 }
 
-.search-btn span {
+.search-btn,
+.search-input {
     font-weight: 600;
 }
 
@@ -71,11 +216,21 @@ nav {
     color: grey;
 }
 
-.search-icon {
+.search-icon,
+.short-search-icon {
     width: 32px;
     height: 32px;
-    background-color: #ff385c;
     border-radius: 50%;
+    background-color: #ff385c;
+}
+
+.search-icon {
+    padding: 25px;
+}
+
+.short-search-icon {
+    padding: 10px;
+    font-size: 12px;
 }
 
 /* Comandi a destra */
